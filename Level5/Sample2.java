@@ -1,10 +1,5 @@
 public class Sample2 {
     public static void main(String[] args) {
-        Dog myDog = new Dog();
-        // You can now use the myDog object
+        System.out.println("No Code Provided");
     }
-}
-
-class Dog {
-    // Class definition
 }
