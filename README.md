@@ -52,13 +52,23 @@ git clone https://github.com/FullStackFactoids/java-trivia-code-samples.git
 cd java-trivia-code-samples
 ```
 
-3. Compile and run the desired trivia code sample:
+3. Compile and run the desired trivia non gradle dependent code samples:
 ```bash
 javac FileName.java
 java FileName
 ```
 Replace `FileName` with the name of the trivia question file (without the `.java` extension) you want to execute.
 
+4. Compile and run the desired trivia gradle dependent code samples:
+```bash
+cd director-name
+./gradlew build  
+./gradlew shadowJar
+java -cp build/libs/directory-name-all.jar FileName      
+
+```
+Replace `FileName` with the name of the trivia question file (without the `.java` extension) you want to execute.
+Replace `director-name` with the name of the director of the  `.java` file.
 ## Contributing
 
 Contributions are always welcome! If you encounter any issues or have suggestions, please open an issue. Direct contributions can be made via pull requests.
